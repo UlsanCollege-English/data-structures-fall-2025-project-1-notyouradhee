@@ -92,7 +92,6 @@ python -m pytest -q
 
 macOS / Linux
 
-export PYTHONPATH=src
 pytest -q
 
 
@@ -116,8 +115,9 @@ Space Complexity
 O(N), where N is the total number of tasks that can be held across all queues at maximum capacity. The space is dominated by the storage required for the tasks and the metadata for each queue.
 
 ##🧾 Menu Items
+
 Hardcoded Menu 
-The menu is fixed as follows:
+
 
 | Item          | Time (min) |
 | ------------- | ---------- |
@@ -143,13 +143,31 @@ RUN Steps Validation: The steps argument for RUN, if provided, must satisfy 1 �
 
 ## Project Structure 
 
-src/
-├── cli.py               # CLI interface (user input)
-├── parser.py            # Command parser
-├── scheduler.py         # Scheduler + queue logic
-tests/
-├── public               # Provided test cases
-README.md                # This file
+.
+├── .github/
+│   └── workflows/
+│       ├── ci.yml
+│       └── classroom.yml
+├── src/
+│   ├── cli.py
+│   ├── parser.py
+│   └── scheduler.py
+├── tests/
+│   ├── public/
+│   │   ├── test_create_and_enq_auto_ids.py
+│   │   ├── test_large_mixed_operations.py
+│   │   ├── test_reject_full_and_unknown_item_messages.py
+│   │   ├── test_run_per_turn_display_and_next.py
+│   │   ├── test_run_steps_limit_validation.py
+│   │   └── test_skip_once_behavior.py
+│   └── student/
+│       ├── test_student_cli_errors.py
+│       ├── test_student_edges.py
+│       └── test_student_extremes.py
+├── PROJECT_1.md
+├── README.md
+└── pytest.ini
+
 
 ## 👨‍💻 Authors
 
