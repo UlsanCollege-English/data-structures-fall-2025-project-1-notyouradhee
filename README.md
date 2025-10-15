@@ -143,7 +143,7 @@ RUN Steps Validation: The steps argument for RUN, if provided, must satisfy 1 �
 
 ## Project Structure 
 
-.
+```.
 ├── .github/
 │   └── workflows/
 │       ├── ci.yml
@@ -166,7 +166,7 @@ RUN Steps Validation: The steps argument for RUN, if provided, must satisfy 1 �
 │       └── test_student_extremes.py
 ├── PROJECT_1.md
 ├── README.md
-└── pytest.ini
+└── pytest.ini ```
 
 
 ## 👨‍💻 Authors
