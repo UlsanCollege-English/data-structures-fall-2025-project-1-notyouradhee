@@ -160,7 +160,7 @@ RUN Steps Validation: The steps argument for RUN, if provided, must satisfy 1 �
 │   │   ├── test_run_per_turn_display_and_next.py
 │   │   ├── test_run_steps_limit_validation.py
 │   │   └── test_skip_once_behavior.py
-│   └── student/
+│   └── extra/
 │       ├── test_student_cli_errors.py
 │       ├── test_student_edges.py
 │       └── test_student_extremes.py
